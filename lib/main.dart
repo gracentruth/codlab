@@ -20,7 +20,6 @@ class RandomWords extends StatefulWidget{
   State<StatefulWidget> createState(){
     return RandomWordsState();
   }
-
 }
 
 class RandomWordsState extends State<RandomWords>{
@@ -68,9 +67,8 @@ class RandomWordsState extends State<RandomWords>{
       // ... to here.
     );
   }
-
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context){
     return Scaffold(
       appBar: AppBar(
         title:Text('Startup Name Generator'),
@@ -81,11 +79,9 @@ class RandomWordsState extends State<RandomWords>{
             tooltip: 'Saved Suggestions',
           ),
         ],
-
       ),
       body:_buildSuggestions(),
     );
-
   }
   void _pushSaved() {
     Navigator.of(context).push(
